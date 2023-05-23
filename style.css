@@ -1,0 +1,42 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin: auto;
+}
+
+:root {
+    --back-azul-claro: #BCD6F1;
+    --azul: #1689FC;
+    --rosa: #FE52A2;
+}
+
+header h1 {
+    /* transformando letras em gradiente */
+    background: -webkit-linear-gradient(0deg, #BCD6F1, #1689FC, #FE52A2, #fff);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    margin: 20px;
+    text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.279);
+}
+
+main {
+    background-color: var(--back-azul-claro);
+    padding: 30px;
+}
+
+#visor {
+    max-width: 50%;
+    
+}
+
+#corpo {
+    background-color: var(--azul);
+    width: 30%;
+    max-width: 40%;
+    border-radius: 10px;
+    padding: 20px;
+}
