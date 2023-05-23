@@ -26,11 +26,13 @@ header h1 {
 main {
     background-color: var(--back-azul-claro);
     padding: 30px;
+    height: 100%;
 }
 
-#visor {
-    max-width: 50%;
-    
+#tela {
+    max-width: 90%;
+    padding: 5px;
+    text-align: right;
 }
 
 #corpo {
@@ -39,4 +41,32 @@ main {
     max-width: 40%;
     border-radius: 10px;
     padding: 20px;
+
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 20% 20%;
+}
+
+button {
+    padding: 20px;
+    border: none;
+    margin: 2px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: auto;
+}
+
+.especial:hover {
+    background-color: #fe52a2d6;
+}
+
+.btn__num:hover {
+    background-color: grey;
+}
+
+.especial {
+    background-color: var(--rosa);   
+    color: #fff; 
+    font-weight: bolder;
+    font-size: 18px;
 }
