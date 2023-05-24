@@ -9,3 +9,13 @@ function numeroNaTela(num) {
 function reset() {
     location.reload()
 }
+
+function calcular() {
+    var resultado = document.querySelector('#tela').innerHTML;
+    if(resultado){ 
+        // calculando com o eval (comp codigo js representado com)
+        document.querySelector('#tela').innerHTML = eval(resultado)
+    } else {
+        reset()
+    }
+}

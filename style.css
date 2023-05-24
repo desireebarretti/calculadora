@@ -72,13 +72,14 @@ button:hover {
     background-color: var(--back-cinza);
 }
 
-.especial:hover {
-    background-color: var( --detalhes-rosa);
-}
-
 .especial {
     background-color: var(--rosa);   
     color: #fff; 
+}
+
+.especial:hover {
+
+    background-color: var( --detalhes-rosa);
 }
 
 #resultado {
@@ -91,4 +92,11 @@ button:hover {
 
 .btn_num {
     width: 40px;
+}
+
+footer {
+    background-color: var(--back-azul-claro);
+    color: var(--cinza-letras);
+    font-size: 14px;
+    padding-top: 158px;
 }
