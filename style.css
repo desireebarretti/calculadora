@@ -13,8 +13,6 @@
     --cinza: #dfdfdff8;
 }
 
-
-
 header h1 {
     /* transformando letras em gradiente */
     background: -webkit-linear-gradient(0deg, #BCD6F1, #1689FC, #FE52A2, #fff);
@@ -72,6 +70,9 @@ button:hover {
 .especial {
     background-color: var(--rosa);   
     color: #fff; 
-    font-weight: bolder;
-    font-size: 18px;
+    /* font-weight: bolder; */
+}
+
+#ac {
+    grid-column: 2fr;
 }

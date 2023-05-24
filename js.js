@@ -1,6 +1,11 @@
-let btn_numeros = document.querySelector("btn_num")
+let btn_numeros = document.querySelector(".btn_num")
 let tela = document.querySelector("#tela")
 
-function numero(){
-    tela.innerHTML = '8'
+function numeroNaTela() {
+    tela.innerHTML = btn_numeros
+
+}
+
+function reset() {
+    location.reload()
 }

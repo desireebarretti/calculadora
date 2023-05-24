@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,45 +9,58 @@
     <link rel="stylesheet" href="style.css">
     <title>Calculadora | DRVB</title>
 </head>
+
 <body>
+
     <header>
         <h1>Calculadora | DRVB</h1>
     </header>
     <main>
-        
         <section id="corpo">
             <div>
-                <input type="text" value="0" id="tela" class="tela">
+                <p id="tela"></p>
             </div>
-            <div class="primeira-linha">
-                <button class="btn_num especial" id="ac">AC</button>
-                <button class="btn_num especial">/</button>
-            </div>
-            <div class="segunda-linha">
-                <button class="btn_num" value="7" onclick="numero()">7</button>
-                <button class="btn_num" value="8">8</button>
-                <button class="btn_num" value="9">9</button>
-                <button class="btn_num especial">*</button>
-            </div>
-            <div class="terceira-linha">
-                <button class="btn_num" value="4">4</button>
-                <button class="btn_num">5</button>
-                <button class="btn_num">6</button>
-                <button class="btn_num especial">-</button>
-            </div>
-            <div class="quarta-linha">
-                <button class="btn_num">1</button>
-                <button class="btn_num">2</button>
-                <button class="btn_num">3</button>
-                <button class="btn_num especial">+</button>
-            </div>
-            <div class="quinta-linha">
-                <button class="btn_num">0</button>
-                <button class="btn_num">.</button>
-                <button class="btn_num especial">=</button>
-            </div>
+
+            <table>
+
+                <tr>
+                    <td><button class="btn_num especial" id="ac" onclick="reset()">AC</button></td>
+                    <td><button class="btn_num especial" id="divisao" onclick="divisao()">/</button></td>
+                </tr>
+
+                <tr>
+                    <td><button class="btn_num" onclick="numeroNaTela()" value="7">7</button></td>
+                    <td><button class="btn_num" value="8">8</button></td>
+                    <td><button class="btn_num" value="9">9</button></td>
+                    <td><button class="btn_num especial" id="multiplicador" onclick="multiplicar()">*</button></td>
+                </tr>
+
+                <tr>
+                    <td><button class="btn_num" value="4">4</button></td>
+                    <td><button class="btn_num">5</button></td>
+                    <td><button class="btn_num">6</button></td>
+                    <td><button class="btn_num especial" id="subtracao">-</button></td>
+                </tr>
+
+                <tr>
+                    <td><button class="btn_num">1</button></td>
+                    <td><button class="btn_num">2</button></td>
+                    <td><button class="btn_num">3</button></td>
+                    <td><button class="btn_num especial" id="soma" onclick="soma()">+</button></td>
+                </tr>
+
+                <tr>
+                    <td><button class="btn_num">0</button></td>
+                    <td><button class="btn_num">.</button></td>
+                    <td><button class="btn_num especial" id="resultado" onclick="resultado()">=</button></td>
+                </tr>
+            </table>
+
         </section>
     </main>
+
     <script src="./js.js"></script>
+
 </body>
+
 </html>
