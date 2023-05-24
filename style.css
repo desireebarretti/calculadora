@@ -37,12 +37,11 @@ main {
     margin-bottom: 10px;
     padding: 10px;
     text-align: right;
-    max-width: 170px;
+    max-width: 145px;
     background-color: #fff;
     border-radius: 5px;
     text-align: right;
     font-size: 20px;
-    /* min-width: 70%; */
     color: var(--cinza-letras);
 }
 
@@ -79,4 +78,16 @@ button:hover {
 .especial {
     background-color: var(--rosa);   
     color: #fff; 
+}
+
+#resultado {
+    width: 80px;
+}
+
+#ac {
+    width: 125px;
+}
+
+.btn_num {
+    width: 40px;
 }
