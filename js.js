@@ -1,9 +1,9 @@
-let btn_numeros = document.querySelector(".btn_num")
 let tela = document.querySelector("#tela")
 
-function numeroNaTela() {
-    tela.innerHTML = btn_numeros
-
+ // inserindo o numero na tela com parametro
+function numeroNaTela(num) {
+    let numero = document.querySelector('#tela').innerHTML;
+    document.querySelector('#tela').innerHTML = numero + num
 }
 
 function reset() {

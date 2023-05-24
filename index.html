@@ -18,40 +18,40 @@
     <main>
         <section id="corpo">
             <div>
-                <p id="tela">tela</p>
+                <p id="tela"></p>
             </div>
 
             <table>
 
                 <tr>
                     <td colspan="3"><button class="btn_num especial" id="ac" onclick="reset()">AC</button></td>
-                    <td><button class="btn_num especial" id="divisao" onclick="divisao()">/</button></td>
+                    <td><button class="btn_num especial" id="divisao"onclick="numeroNaTela('/')">/</button></td>
                 </tr>
 
                 <tr>
-                    <td><button class="btn_num" onclick="numeroNaTela()" value="7">7</button></td>
-                    <td><button class="btn_num" value="8">8</button></td>
-                    <td><button class="btn_num" value="9">9</button></td>
-                    <td><button class="btn_num especial" id="multiplicador" onclick="multiplicar()">*</button></td>
+                    <td><button class="btn_num" onclick="numeroNaTela('7')">7</button></td>
+                    <td><button class="btn_num" onclick="numeroNaTela('8')">8</button></td>
+                    <td><button class="btn_num" onclick="numeroNaTela('9')">9</button></td>
+                    <td><button class="btn_num especial" id="multiplicador" onclick="numeroNaTela('x')">x</button></td>
                 </tr>
 
                 <tr>
-                    <td><button class="btn_num" value="4">4</button></td>
-                    <td><button class="btn_num">5</button></td>
-                    <td><button class="btn_num">6</button></td>
-                    <td><button class="btn_num especial" id="subtracao">-</button></td>
+                    <td><button class="btn_num" onclick="numeroNaTela('4')">4</button></td>
+                    <td><button class="btn_num" onclick="numeroNaTela('5')">5</button></td>
+                    <td><button class="btn_num" onclick="numeroNaTela('6')">6</button></td>
+                    <td><button class="btn_num especial" id="subtracao" onclick="numeroNaTela('-')">-</button></td>
                 </tr>
 
                 <tr>
-                    <td><button class="btn_num">1</button></td>
-                    <td><button class="btn_num">2</button></td>
-                    <td><button class="btn_num">3</button></td>
-                    <td><button class="btn_num especial" id="soma" onclick="soma()">+</button></td>
+                    <td><button class="btn_num" onclick="numeroNaTela('1')">1</button></td>
+                    <td><button class="btn_num" onclick="numeroNaTela('2')">2</button></td>
+                    <td><button class="btn_num" onclick="numeroNaTela('3')">3</button></td>
+                    <td><button class="btn_num especial" id="soma" onclick="numeroNaTela('+')">+</button></td>
                 </tr>
 
                 <tr>
-                    <td><button class="btn_num">0</button></td>
-                    <td><button class="btn_num">.</button></td>
+                    <td><button class="btn_num" onclick="numeroNaTela('0')">0</button></td>
+                    <td><button class="btn_num" onclick="numeroNaTela('.')">.</button></td>
                     <td colspan="2"><button class="btn_num especial" id="resultado" onclick="resultado()">=</button></td>
                 </tr>
             </table>
